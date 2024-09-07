@@ -44,8 +44,6 @@ MovieHashTable::~MovieHashTable() {
 }
 
 // Hash function for MovieHashTable that returns an index in the hash table for a given movie title.
-// Students must use their identikey to come up with a creative hash function that minimizes collisions
-// for the given IMDB-Movie database to ensure efficient insertion and retrieval of movie nodes.
 int MovieHashTable::hash(string title) {
 
     int hash = 0;
@@ -53,7 +51,6 @@ int MovieHashTable::hash(string title) {
     for (int i = 0; i< title.length();  i++){
       hash = hash + title[i]; //classic ascii add up
     }
-    identikey * rand()%3; //multiplying identity key by randonly generated num
     hash = identikey * hash; //multiplying hash and new key
     return hash % table_size;
 }
