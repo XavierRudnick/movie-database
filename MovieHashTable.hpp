@@ -38,8 +38,6 @@ class MovieHashTable {
 
     private:
         // Hash function for MovieHashTable that returns an index in the hash table for a given movie title.
-        // Students must use their identikey to come up with a creative hash function that minimizes collisions
-        // for the given IMDB-Movie database to ensure efficient insertion and retrieval of movie nodes.
         int hash(string title);
 };
 
